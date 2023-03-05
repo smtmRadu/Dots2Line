@@ -9,6 +9,5 @@ Depending on the performance of your device, it is recommended to adjust the net
 ##### Future work
 The app might receive updates including different neural network architectures that can be used (e.g. RNN, LSTM), improving performance and classification prediction resolution or digit/object recognition (based on ANN or CNN). The project files along with source code will be available soon.
 
-
-![img](https://github.com/RaduTM-spec/Dots2Line/regression.png)
-![img](https://github.com/RaduTM-spec/Dots2Line/classification.png)
+![regression](https://user-images.githubusercontent.com/67599940/222987638-db1efe4e-ddd9-429f-b2a5-e1f14108e5fc.png)
+![classification](https://user-images.githubusercontent.com/67599940/222987640-a1eafa3f-e831-409f-9849-c9894e6875ea.png)
