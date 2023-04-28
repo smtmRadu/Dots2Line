@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using UnityEditor;
 using UnityEngine;
 using static NeuroForge.Functions;
 
@@ -62,8 +61,8 @@ namespace NeuroForge
             if (createAsset)
             {
                 Debug.Log(name + " was created!");
-                AssetDatabase.CreateAsset(this, "Assets/" + name + ".asset");
-                AssetDatabase.SaveAssets();
+                // AssetDatabase.CreateAsset(this, "Assets/" + name + ".asset");
+                // AssetDatabase.SaveAssets();
             }
         }
 

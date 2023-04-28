@@ -6,8 +6,6 @@ using UnityEngine;
 using static UnityEngine.Mesh;
 using NeuroForge;
 using System.Text;
-using UnityEditor.SceneManagement;
-using UnityEditor;
 
 public class MNISTTrain_NN : MonoBehaviour
 {
@@ -48,7 +46,7 @@ public class MNISTTrain_NN : MonoBehaviour
 
         Train();
         Test();
-        network.Save();
+        //network.Save();
 
         FPS = 1f/Time.deltaTime;
     }

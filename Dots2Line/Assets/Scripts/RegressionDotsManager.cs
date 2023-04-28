@@ -11,6 +11,7 @@ public class RegressionDotsManager : MonoBehaviour
     public WarningsPrinter warnPrinter;
     public GameObject dotPrefab;
     public LineRenderer lineRenderer;
+    public GameObject m_FunctionsMenu;
 
     public float dotsZglobalPosition = 5f;
     public int minDots = 10;
@@ -20,13 +21,13 @@ public class RegressionDotsManager : MonoBehaviour
 
     [Min(30)] public int noTestDots = 100;
 
-    private List<Dot> trainDots = new List<Dot>();
+    public List<Dot> trainDots = new List<Dot>();
     private List<Dot> testDots = new List<Dot>();
     public int dots_on_the_map = 0;
 
 
     // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
         placeTimeLeft -= Time.deltaTime;
         DrawDots();
@@ -34,7 +35,7 @@ public class RegressionDotsManager : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        DrawLine();
+        RenderLine();
     }
 
     void DrawDots()
@@ -46,6 +47,9 @@ public class RegressionDotsManager : MonoBehaviour
             return;
 
         if (NetworkManager.state != NetManagerState.Start)
+            return;
+
+        if (m_FunctionsMenu.activeSelf)
             return;
 
         if (dots_on_the_map >= maxDots)
@@ -76,7 +80,7 @@ public class RegressionDotsManager : MonoBehaviour
         
         
     }
-    void DrawLine()
+    void RenderLine()
     {
         List<Vector3> positions = new List<Vector3>();
         foreach (var item in testDots)

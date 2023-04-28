@@ -1,0 +1,19 @@
+<libraries>
+  <library
+      name="E:\Code\Dots2Line\Dots2Line\Library\Bee\Android\Prj\Mono2x\Gradle@@:unityLibrary::release"
+      jars="E:\Code\Dots2Line\Dots2Line\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\.transforms\d5ad7f3ed9091b78b5bfdf3bc4c6bf0d\transformed\out\jars\classes.jar;E:\Code\Dots2Line\Dots2Line\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\.transforms\d5ad7f3ed9091b78b5bfdf3bc4c6bf0d\transformed\out\jars\libs\unity-classes.jar"
+      resolved="Gradle:unityLibrary:unspecified"
+      folder="E:\Code\Dots2Line\Dots2Line\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\.transforms\d5ad7f3ed9091b78b5bfdf3bc4c6bf0d\transformed\out"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="__local_aars__:E:\Code\Dots2Line\Dots2Line\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\libs\unity-classes.jar:unspecified@jar"
+      jars="E:\Code\Dots2Line\Dots2Line\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\libs\unity-classes.jar"
+      resolved="__local_aars__:E:\Code\Dots2Line\Dots2Line\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\libs\unity-classes.jar:unspecified"/>
+</libraries>

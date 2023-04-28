@@ -2,7 +2,6 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using UnityEditor;
 using UnityEngine;
 
 namespace NeuroForge
@@ -49,8 +48,8 @@ namespace NeuroForge
             if (createAsset)
             {
                 Debug.Log(name + " was created!");
-                AssetDatabase.CreateAsset(this, "Assets/" + name + ".asset");
-                AssetDatabase.SaveAssets();
+                // AssetDatabase.CreateAsset(this, "Assets/" + name + ".asset");
+                // AssetDatabase.SaveAssets();
             }
         }
         public void OnBeforeSerialize()
@@ -97,13 +96,13 @@ namespace NeuroForge
 
         public void GradClipNorm(float threshold) => network.GradClipNorm(threshold);
         public void OptimStep(float learnRate, float momentum, float regularization) => network.OptimStep(learnRate, momentum, regularization);
-        public void Save()
-        {
-            EditorUtility.SetDirty(network);
-            AssetDatabase.SaveAssetIfDirty(network);
-            EditorUtility.SetDirty(this);
-            AssetDatabase.SaveAssetIfDirty(this);
-        }
+        // public void Save()
+        // {
+        //     EditorUtility.SetDirty(network);
+        //     AssetDatabase.SaveAssetIfDirty(network);
+        //     EditorUtility.SetDirty(this);
+        //     AssetDatabase.SaveAssetIfDirty(this);
+        // }
 
         // Convolution Methods
         private void Pad(ref float[,] image)
